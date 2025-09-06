@@ -1,0 +1,201 @@
+/* MSN Messenger Specific Styles */
+
+/* Emoticon styling */
+.emoticon-content .inline-emoticon {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  margin: 0 1px;
+  vertical-align: middle;
+  image-rendering: pixelated; /* For crisp emoticon rendering */
+}
+
+/* MSN-style scrollbar */
+.msn-scrollbar::-webkit-scrollbar {
+  width: 16px;
+}
+
+.msn-scrollbar::-webkit-scrollbar-track {
+  background: #f0f0f0;
+  border-radius: 8px;
+}
+
+.msn-scrollbar::-webkit-scrollbar-thumb {
+  background: linear-gradient(to bottom, #e0e0e0, #c0c0c0);
+  border: 1px solid #b0b0b0;
+  border-radius: 8px;
+}
+
+.msn-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(to bottom, #d0d0d0, #b0b0b0);
+}
+
+/* MSN-style window effects */
+.msn-window {
+  box-shadow: 
+    0 4px 12px rgba(0, 0, 0, 0.15),
+    inset 0 1px 0 rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(1px);
+}
+
+/* MSN gradient backgrounds */
+.msn-gradient-blue {
+  background: linear-gradient(to bottom, #4A90E2, #0066CC);
+}
+
+.msn-gradient-header {
+  background: linear-gradient(to right, #0066CC, #4A90E2);
+}
+
+/* MSN button styles */
+.msn-button {
+  background: linear-gradient(to bottom, #f0f0f0, #e0e0e0);
+  border: 1px solid #c0c0c0;
+  border-radius: 3px;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.5);
+  transition: all 0.1s ease;
+}
+
+.msn-button:hover {
+  background: linear-gradient(to bottom, #f8f8f8, #e8e8e8);
+  border-color: #0066CC;
+}
+
+.msn-button:active {
+  background: linear-gradient(to bottom, #e0e0e0, #d0d0d0);
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* MSN input styles */
+.msn-input {
+  border: 2px inset #f0f0f0;
+  border-radius: 2px;
+  background: white;
+  font-family: 'Tahoma', Arial, sans-serif;
+  font-size: 11px;
+}
+
+.msn-input:focus {
+  border-color: #0066CC;
+  outline: none;
+  box-shadow: 0 0 3px rgba(0, 102, 204, 0.3);
+}
+
+/* Status indicator animations */
+.status-online {
+  animation: pulse-green 2s infinite;
+}
+
+@keyframes pulse-green {
+  0%, 100% { 
+    opacity: 1; 
+  }
+  50% { 
+    opacity: 0.7; 
+  }
+}
+
+.status-away {
+  animation: pulse-orange 3s infinite;
+}
+
+@keyframes pulse-orange {
+  0%, 100% { 
+    opacity: 1; 
+  }
+  50% { 
+    opacity: 0.8; 
+  }
+}
+
+/* Typing indicator animation */
+.typing-dots {
+  animation: typing 1.5s infinite;
+}
+
+@keyframes typing {
+  0%, 20% { 
+    opacity: 0.2; 
+  }
+  50% { 
+    opacity: 1; 
+  }
+  100% { 
+    opacity: 0.2; 
+  }
+}
+
+/* MSN-style tooltip */
+.msn-tooltip {
+  background: #ffffcc;
+  border: 1px solid #cccccc;
+  padding: 4px 8px;
+  font-size: 11px;
+  border-radius: 2px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  font-family: 'Tahoma', Arial, sans-serif;
+}
+
+/* MSN nostalgic fonts */
+.msn-font {
+  font-family: 'Tahoma', 'Segoe UI', Arial, sans-serif;
+}
+
+.msn-font-small {
+  font-family: 'Tahoma', 'Segoe UI', Arial, sans-serif;
+  font-size: 11px;
+}
+
+/* Chat message bubble styles */
+.chat-bubble {
+  max-width: 250px;
+  word-wrap: break-word;
+  line-height: 1.4;
+}
+
+.chat-bubble-sent {
+  background: linear-gradient(to bottom, #E3F2FD, #BBDEFB);
+  border: 1px solid #90CAF9;
+  border-radius: 8px 8px 2px 8px;
+}
+
+.chat-bubble-received {
+  background: linear-gradient(to bottom, #F5F5F5, #E0E0E0);
+  border: 1px solid #BDBDBD;
+  border-radius: 8px 8px 8px 2px;
+}
+
+/* Window dragging cursor */
+.window-header {
+  cursor: move;
+  user-select: none;
+}
+
+/* MSN-style dropdown menu */
+.msn-dropdown {
+  background: white;
+  border: 1px solid #999999;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+  border-radius: 2px;
+  font-family: 'Tahoma', Arial, sans-serif;
+  font-size: 11px;
+}
+
+/* Smooth transitions for MSN-style interactions */
+.msn-transition {
+  transition: all 0.15s ease-in-out;
+}
+
+/* Contact hover effects */
+.contact-item:hover {
+  background: linear-gradient(to right, #E3F2FD, #F0F8FF);
+  border-left: 3px solid #0066CC;
+  transform: translateX(2px);
+}
+
+/* MSN-style focus rings */
+.msn-focus:focus {
+  outline: 2px dotted #0066CC;
+  outline-offset: 1px;
+}
